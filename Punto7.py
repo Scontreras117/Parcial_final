@@ -37,16 +37,16 @@ class linked_list:
             curr.next = None       
 
 
-################Esta es la función
-def pilas(pila):
-  
-    if pila.isempty:
-      return None
-    
-    else:
-      pila2 = linked_list
-      for i in len(pila)-1: #Vaciado y llenado de la otra
-          pila2.add_at_end(pila.get_last_node) #Le ponemos el ultimo de la 1
-          pila.delete_node(pila.get_last_node) #borramos el ultimo de la 1
+        ################Esta es la función
+        def pilas(pila):
 
-    return(pila2)
+            if pila.isempty:
+              return None
+
+            else:
+              pila2 = linked_list
+              for i in range(len(pila)-1): #Vaciado y llenado de la otra
+                  pila2.add_at_end(pila.get_last_node) #Le ponemos el ultimo de la 1
+                  pila.delete_node(pila.get_last_node) #borramos el ultimo de la 1
+
+            return(pila2)
